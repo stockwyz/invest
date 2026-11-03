@@ -1,0 +1,119 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+
+# Flutter / Dart 生成文件
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 系统与日志
+.DS_Store
+*.log
+
+# Android 本机配置与签名
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# iOS Flutter 临时生成文件
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/.last_build_id
+
+# Web 自动生成注册文件
+lib/generated_plugin_registrant.dart
+
+# 混淆符号文件
+app.*.symbols
+app.*.map.json
+
+
+# Flutter / Dart 生成文件
+/invest-frontend/frontend/.dart_tool/
+/invest-frontend/frontend/build/
+/invest-frontend/frontend/.flutter-plugins
+/invest-frontend/frontend/.flutter-plugins-dependencies
+/invest-frontend/frontend/.packages
+/invest-frontend/frontend/.pub/
+/invest-frontend/frontend/.pub-cache/
+
+# IDE
+/invest-frontend/frontend/.idea/
+/invest-frontend/frontend/*.iml
+/invest-frontend/frontend/.vscode/
+
+# Android 本机配置与签名
+/invest-frontend/frontend/android/local.properties
+/invest-frontend/frontend/android/key.properties
+/invest-frontend/frontend/**/*.jks
+/invest-frontend/frontend/**/*.keystore
+
+# iOS 自动生成文件
+/invest-frontend/frontend/ios/Flutter/ephemeral/
+/invest-frontend/frontend/ios/Flutter/Generated.xcconfig
+/invest-frontend/frontend/ios/Flutter/flutter_export_environment.sh
+/invest-frontend/frontend/ios/Flutter/.last_build_id
+
+# 日志与系统文件
+/invest-frontend/frontend/*.log
+/invest-frontend/frontend/.DS_Store
+
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+/invest-backend/backend/target
+/invest-backend/backend/.project
+/invest-backend/backend/.settings
+/invest-backend/backend/.classpath
