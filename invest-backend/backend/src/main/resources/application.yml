@@ -38,26 +38,7 @@ spring:
       path: /h2-console
 
 ---
-# 默认生效的 profile：数据库就是 MySQL，不是内嵌/临时数据库。
-# 首次使用前，先拿 sql/schema.sql 在你的 MySQL 里建库建表（本 profile 不会自动建表/灌数据，
-# 见下面 sql.init.mode: never），需要示例数据的话再手动执行一遍 sql/seed-data.sql。
-# 连接信息全部走环境变量，默认值只是本机联调占位：DB_HOST/DB_PORT/DB_NAME/DB_USER/DB_PASSWORD。
-spring:
-  config:
-    activate:
-      on-profile: mysql
-  datasource:
-    url: jdbc:mysql://${DB_HOST:127.0.0.1}:${DB_PORT:3306}/${DB_NAME:invest}?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USER:root}
-    password: ${DB_PASSWORD:root123456}
-  sql:
-    init:
-      mode: never   # 生产库结构用 sql/schema.sql 手动执行或走迁移工具（Flyway/Liquibase）管理
-  jpa:
-    hibernate:
-      ddl-auto: none
-    show-sql: false
+
 
 app:
   # MVP 阶段未接入登录鉴权，所有请求视为同一用户（见 CurrentUserProvider）。

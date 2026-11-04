@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:127.0.0.1}:${DB_PORT:3306}/${DB_NAME:invest}?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:123456sS}
+  sql:
+    init:
+      mode: never   # 生产库结构用 sql/schema.sql 手动执行或走迁移工具（Flyway/Liquibase）管理
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
