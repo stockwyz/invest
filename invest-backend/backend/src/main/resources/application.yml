@@ -5,7 +5,7 @@ spring:
   application:
     name: invest-backend
   profiles:
-    active: mysql
+    active: dev
 
 ---
 # 仅用于快速联调/跑单元测试，不需要装 MySQL 也能启动：内嵌 H2（MySQL 兼容模式）。

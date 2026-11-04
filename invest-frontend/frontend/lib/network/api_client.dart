@@ -20,7 +20,7 @@ class ApiClient {
 
   static const String baseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'http://192.168.2.29:8080',
+    defaultValue: 'http://192.168.0.199:8080',
   );
 
   late final Dio _dio;
